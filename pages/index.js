@@ -51,6 +51,7 @@ export default function Home() {
   return (
     <div className={`relative ${data.showCursor && "cursor-none"}`}>
       {data.showCursor && <Cursor />}
+      
       <Head>
         <title>{data.name}</title>
       </Head>
@@ -65,6 +66,7 @@ export default function Home() {
         />
         <div className="laptop:mt-20 mt-10">
           <div className="mt-5">
+            
             <h1
               ref={textOne}
               className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-4/5 mob:w-full laptop:w-4/5"
@@ -131,9 +133,22 @@ export default function Home() {
         )}
         <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
           <h1 className="tablet:m-10 text-2xl text-bold">About.</h1>
-          <p className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-full laptop:w-3/5">
-            {data.aboutpara}
-          </p>
+          <div className="flex flex-col tablet:flex-row justify-start items-start gap-8 tablet:gap-12 tablet:m-10">
+    {/* Profile pic  bigger on mobile, a bit smaller on tablet+ */}
+    <div className="w-64 h-80 tablet:w-48 tablet:h-64 rounded-lg overflow-hidden border border-gray-300 hover:shadow-2xl transition-shadow duration-200 ease-in-out flex-shrink-0">
+      
+      <img
+        src="/images/om.jpeg"
+        alt="Profile"
+        className="w-full h-full object-cover"
+      />
+    </div>
+
+    {/* About text */}
+    <p className="text-xl laptop:text-3xl text-justify w-full">
+      {data.aboutpara}
+    </p>
+  </div>
         </div>
         <Footer />
       </div>

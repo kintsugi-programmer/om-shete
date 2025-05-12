@@ -45,6 +45,19 @@ const Resume = () => {
                 mount && theme.theme === "dark" ? "bg-slate-800" : "bg-gray-50"
               } max-w-4xl p-20 mob:p-5 desktop:p-20 rounded-lg shadow-sm`}
             >
+              
+<div className="flex mob:justify-center desktop:justify-start items-center">
+  <div className="w-32 h-40 rounded-lg overflow-hidden border border-gray-300 hover:shadow-xl transition-shadow duration-200 ease-in-out">
+     <img
+      src="/images/om.jpeg"
+      alt="Profile"
+      className="w-full h-full object-cover"
+    />
+  </div>
+  {/* other content to the right */}
+</div>
+<br></br>
+
               <h1 className="text-3xl font-bold">{name}</h1>
               <h2 className="text-xl mt-5">{resume.tagline}</h2>
               <h2 className="w-4/5 text-xl mt-5 opacity-50">
@@ -84,6 +97,70 @@ const Resume = () => {
       <p>Conducted by: Department of Biotechnology, Government of India</p>
     </div>
   </div>
+
+
+  <div className="mt-5">
+
+     <h1 className="text-2xl font-bold mt-6">Publications</h1>
+  <ul className="list-disc ml-5 mt-2 space-y-2">
+    <li>
+      <strong>Toward a Health-Associated Core Keystone Index for the Human Gut Microbiome</strong>, Cell Reports, March 2, 2025.&nbsp;
+      <a href="https://doi.org/..." target="_blank" rel="noopener noreferrer">
+        Click here
+      </a>
+    </li>
+    <li>
+      <strong>Role of Gut and Urinary Microbiome in Children with Urinary Tract Infections: A Systematic Review</strong>, Diagnostics (MDPI), January 3, 2025.&nbsp;
+      <a href="https://doi.org/..." target="_blank" rel="noopener noreferrer">
+        Click here
+      </a>
+    </li>
+    <li>
+      <strong>Normal Gut Microbiomes in Diverse Populations: Clinical Implications</strong>, Annual Review of Medicine, November 18, 2024.&nbsp;
+      <a href="https://doi.org/..." target="_blank" rel="noopener noreferrer">
+        Click here
+      </a>
+    </li>
+  </ul>
+  <br></br>
+  <h1 className="text-2xl font-bold">Projects</h1>
+  <div className="mt-4 space-y-6">
+    <div>
+      <h2 className="text-lg font-semibold">
+        Comparative Expression Analysis of Downy Mildew Resistant Grape Varieties
+      </h2>
+      <p className="text-sm opacity-75">
+        ICAR–National Research Centre for Grapes, Pune (Aug 2021 – Mar 2022) | Part of B.Tech Biotechnology dissertation
+      </p>
+      <ul className="list-disc ml-5 mt-2 space-y-1">
+        <li>
+          Designed and executed RT-qPCR experiments to quantify gene expression in resistant vs. susceptible cultivars
+        </li>
+        <li>
+          Hands-on experience with RNA isolation, cDNA synthesis, primer design, and data analysis
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2 className="text-lg font-semibold">4G Biomethane Production from Cactus</h2>
+      <p className="text-sm opacity-75">
+        College of Agricultural Biotechnology, Loni-Pravara (AVISHKAR Research Convention) (Nov 2019 – Mar 2020)
+      </p>
+      <ul className="list-disc ml-5 mt-2 space-y-1">
+        <li>Developed a second-generation biomethane production process using cactus biomass</li>
+        <li>
+          Presented research at AVISHKAR, enhancing scientific communication and presentation skills
+        </li>
+        <li>
+          Gained proficiency in anaerobic digestion assays, gas chromatography, and bioprocess optimization
+        </li>
+      </ul>
+    </div>
+  </div>
+
+ 
+</div>
+
                 <div className="mt-5">
                 <h1 className="text-2xl font-bold">Education</h1>
 
