@@ -68,6 +68,7 @@ const Resume = () => {
                   )
                 )}
               </div>
+              
               <div className="mt-5">
                 <h1 className="text-2xl font-bold">Education</h1>
                 <div className="mt-2">
