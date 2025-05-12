@@ -68,7 +68,23 @@ const Resume = () => {
                   )
                 )}
               </div>
-                            <div className="mt-5">
+              <div className="mt-5">
+  <h1 className="text-2xl font-bold">Test Scores</h1>
+  <div className="mt-4 space-y-3">
+    <div>
+      <h2 className="text-lg font-semibold">GATE Biotechnology (BT) 2023</h2>
+      <p>Score: 31.33 / 100 (Feb 2023)</p>
+      <p>Result: Qualified GATE BT 2023</p>
+      <p>Institution: Indraprastha Institute of Information Technology, Delhi</p>
+    </div>
+    <div>
+      <h2 className="text-lg font-semibold">GAT-B (DBT JRF) 2022</h2>
+      <p>Score: 95.5 / 100 (Apr 2022)</p>
+      <p>Result: Qualified Graduate Aptitude Test for Biotechnology (DBT JRF)</p>
+      <p>Conducted by: Department of Biotechnology, Government of India</p>
+    </div>
+  </div>
+                <div className="mt-5">
                 <h1 className="text-2xl font-bold">Education</h1>
 
                 {resume.edu.map(
@@ -95,12 +111,23 @@ const Resume = () => {
                   </p>
                 </div>
               </div> */}
+              
+
+  <h1 className="text-2xl font-bold mt-6">Languages</h1>
+  <ul className="list-disc ml-5 mt-2 space-y-1">
+    <li>English: Professional working proficiency</li>
+    <li>Hindi: Limited working proficiency</li>
+    <li>Marathi: Native or bilingual proficiency</li>
+  </ul>
+</div>
+
               <div className="mt-5">
+
                 <h1 className="text-2xl font-bold">Skills</h1>
                 <div className="flex mob:flex-col desktop:flex-row justify-between">
                   {resume.languages && (
                     <div className="mt-2 mob:mt-5">
-                      <h2 className="text-lg">Languages</h2>
+                      <h2 className="text-lg">Laboratory & Biotech Techniques</h2>
                       <ul className="list-disc">
                         {resume.languages.map((language, index) => (
                           <li key={index} className="ml-5 py-2">
@@ -113,7 +140,7 @@ const Resume = () => {
 
                   {resume.frameworks && (
                     <div className="mt-2 mob:mt-5">
-                      <h2 className="text-lg">Frameworks</h2>
+                      <h2 className="text-lg">Data Analysis & Programming & Tools</h2>
                       <ul className="list-disc">
                         {resume.frameworks.map((framework, index) => (
                           <li key={index} className="ml-5 py-2">
@@ -137,6 +164,34 @@ const Resume = () => {
                     </div>
                   )}
                 </div>
+                <div className="mt-5">
+  <h1 className="text-2xl font-bold">Volunteer Experience</h1>
+  <div className="mt-4 space-y-6">
+    <div>
+      <h2 className="text-lg font-semibold">Student Volunteer</h2>
+      <p className="text-sm opacity-75">
+        Robin Hood Army (May 2021 – Aug 2021 | 4 months) &nbsp;|&nbsp; Category: Social Services
+      </p>
+      <ul className="list-disc ml-5 mt-2 space-y-1">
+        <li>Participated in “zero-fundraising” campaigns to distribute meals and essential supplies to underserved communities</li>
+        <li>Coordinated logistics and volunteer teams to optimize food collection and delivery</li>
+        <li>Enhanced organizational and interpersonal skills while supporting local relief efforts</li>
+      </ul>
+    </div>
+    <div>
+      <h2 className="text-lg font-semibold">Student Volunteer</h2>
+      <p className="text-sm opacity-75">
+        National Service Scheme (Jun 2019 – Jul 2022 | 3 years 2 months) &nbsp;|&nbsp; Category: Social Services
+      </p>
+      <ul className="list-disc ml-5 mt-2 space-y-1">
+        <li>Engaged in community service projects—health camps, awareness drives, and environmental clean-ups</li>
+        <li>Collaborated with peers and faculty advisors to plan and execute events impacting hundreds of beneficiaries</li>
+        <li>Strengthened leadership, project-management, and problem-solving abilities through sustained service activities</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
               </div>
             </div>
           </div>
