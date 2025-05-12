@@ -68,7 +68,21 @@ const Resume = () => {
                   )
                 )}
               </div>
-              
+                            <div className="mt-5">
+                <h1 className="text-2xl font-bold">Education</h1>
+
+                {resume.edu.map(
+                  ({ id, dates, type, position, bullets }) => (
+                    <ProjectResume
+                      key={id}
+                      dates={dates}
+                      type={type}
+                      position={position}
+                      bullets={bullets}
+                    ></ProjectResume>
+                  )
+                )}
+              </div>
               <div className="mt-5">
                 <h1 className="text-2xl font-bold">Education</h1>
                 <div className="mt-2">

@@ -662,6 +662,92 @@ const Edit = () => {
               </Button>
             </div>
             <hr className="my-10"></hr>
+
+
+<h1>Education</h1>
+            <div className="mt-10">
+              {data.resume.edu.map((edu, index) => (
+                <div className="mt-5" key={edu.id}>
+                  <div className="flex items-center justify-between">
+                    <h1 className="text-2xl">{edu.position}</h1>
+                    <Button
+                      // onClick={() => deleteProject(project.id)}
+                      type="primary"
+                    >
+                      Delete
+                    </Button>
+                  </div>
+
+                  <div className="flex items-center mt-5">
+                    <label className="w-1/5 text-lg opacity-50">Dates</label>
+                    <input
+                      value={edu.dates}
+                      onChange={(e) =>
+                        handleEditExperiences(index, {
+                          ...edu,
+                          dates: e.target.value,
+                        })
+                      }
+                      className="w-4/5 ml-10 p-2 rounded-md shadow-lg border-2"
+                      type="text"
+                    ></input>
+                  </div>
+                  <div className="flex items-center mt-2">
+                    <label className="w-1/5 text-lg opacity-50">Type</label>
+                    <input
+                      value={edu.type}
+                      onChange={(e) =>
+                        handleEditExperiences(index, {
+                          ...edu,
+                          type: e.target.value,
+                        })
+                      }
+                      className="w-4/5 ml-10 p-2 rounded-md shadow-lg border-2"
+                      type="text"
+                    ></input>
+                  </div>
+                  <div className="flex items-center mt-2">
+                    <label className="w-1/5 text-lg opacity-50">Position</label>
+                    <input
+                      value={edu.position}
+                      onChange={(e) =>
+                        handleEditExperiences(index, {
+                          ...edu,
+                          position: e.target.value,
+                        })
+                      }
+                      className="w-4/5 ml-10 p-2 rounded-md shadow-lg border-2"
+                      type="text"
+                    ></input>
+                  </div>
+                  <div className="mt-2 flex">
+                    <label className="w-1/5 text-lg opacity-50">Bullets</label>
+                    <div className="w-4/5 ml-10 flex flex-col">
+                      <input
+                        value={edu.bullets}
+                        onChange={(e) =>
+                          handleEditExperiences(index, {
+                            ...edu,
+                            bullets: e.target.value,
+                          })
+                        }
+                        placeholder="Bullet One, Bullet Two, Bullet Three"
+                        className="p-2 rounded-md shadow-lg border-2"
+                        type="text"
+                      ></input>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="my-10">
+              <Button onClick={handleAddExperiences} type="primary">
+                Add Education +
+              </Button>
+            </div>
+            <hr className="my-10"></hr>
+
+
             <div className="mt-10">
               <h1>Education</h1>
               <div className="flex items-center mt-5">
