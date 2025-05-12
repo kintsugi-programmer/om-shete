@@ -146,6 +146,36 @@ const Edit = () => {
     });
   };
 
+
+  // Edu
+
+    const handleAddEdus = () => {
+    setData({
+      ...data,
+      resume: {
+        ...data.resume,
+        edus: [
+          ...data.resume.edus,
+          {
+            id: uuidv4(),
+            dates: "Enter Dates",
+            type: "Full Time",
+            position: "Frontend Engineer at X",
+            bullets: ["Worked on the frontend of a React application"],
+          },
+        ],
+      },
+    });
+  };
+
+  const handleEditEdus = (index, editEdue) => {
+    let copyEdus = data.resume.edus;
+    copyEdus[index] = { ...editEdu };
+    setData({
+      ...data,
+      resume: { ...data.resume, edus: copyEdus },
+    });
+  };
   return (
     <div className={`container mx-auto ${data.showCursor && "cursor-none"}`}>
       <Header isBlog></Header>
@@ -683,7 +713,7 @@ const Edit = () => {
                     <input
                       value={edu.dates}
                       onChange={(e) =>
-                        handleEditExperiences(index, {
+                        handleEditEdus(index, {
                           ...edu,
                           dates: e.target.value,
                         })
@@ -697,7 +727,7 @@ const Edit = () => {
                     <input
                       value={edu.type}
                       onChange={(e) =>
-                        handleEditExperiences(index, {
+                        handleEditEdus(index, {
                           ...edu,
                           type: e.target.value,
                         })
@@ -711,7 +741,7 @@ const Edit = () => {
                     <input
                       value={edu.position}
                       onChange={(e) =>
-                        handleEditExperiences(index, {
+                        handleEditEdus(index, {
                           ...edu,
                           position: e.target.value,
                         })
@@ -726,7 +756,7 @@ const Edit = () => {
                       <input
                         value={edu.bullets}
                         onChange={(e) =>
-                          handleEditExperiences(index, {
+                          handleEditEdus(index, {
                             ...edu,
                             bullets: e.target.value,
                           })
@@ -741,7 +771,7 @@ const Edit = () => {
               ))}
             </div>
             <div className="my-10">
-              <Button onClick={handleAddExperiences} type="primary">
+              <Button onClick={handleAddEdus} type="primary">
                 Add Education +
               </Button>
             </div>

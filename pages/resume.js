@@ -83,7 +83,7 @@ const Resume = () => {
                   )
                 )}
               </div>
-              <div className="mt-5">
+              {/* <div className="mt-5">
                 <h1 className="text-2xl font-bold">Education</h1>
                 <div className="mt-2">
                   <h2 className="text-lg">{resume.education.universityName}</h2>
@@ -94,7 +94,7 @@ const Resume = () => {
                     {resume.education.universityPara}
                   </p>
                 </div>
-              </div>
+              </div> */}
               <div className="mt-5">
                 <h1 className="text-2xl font-bold">Skills</h1>
                 <div className="flex mob:flex-col desktop:flex-row justify-between">
