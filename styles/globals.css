@@ -12,6 +12,7 @@ body {
   @apply dark:bg-black dark:text-white;
 }
 
+/* === Green–Blue Accent Gradients === */
 .gradient-circle {
   position: absolute;
   pointer-events: none;
@@ -23,10 +24,11 @@ body {
   filter: blur(40px);
   background: radial-gradient(
     circle,
-    rgba(248, 107, 223, 1) 0%,
-    rgba(107, 107, 248, 0.8) 100%
+    /* soft green */ rgba(34, 193, 195, 1) 0%,
+    /* blue-500 with a hint of transparency */ rgba(59, 130, 246, 0.8) 100%
   );
 }
+
 .gradient-circle-bottom {
   position: absolute;
   pointer-events: none;
@@ -38,11 +40,12 @@ body {
   filter: blur(40px);
   background: radial-gradient(
     circle,
-    rgba(248, 107, 223, 1) 0%,
-    rgba(107, 107, 248, 0.8) 100%
+    rgba(34, 193, 195, 1) 0%,
+    rgba(59, 130, 246, 0.8) 100%
   );
 }
 
+/* Hover halo: green → blue */
 .gradient-shadow:hover::before {
   content: "";
   z-index: -1;
@@ -51,19 +54,16 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(-45deg, #45caff 0%, #ff1b6b 100%);
-  transform: translate3d(0px, 20px, 0) scale(0.95);
+  /* from emerald-400 to blue-500 */
+  background: linear-gradient(-45deg, #34d399 0%, #3b82f6 100%);
+  transform: translate3d(0, 20px, 0) scale(0.95);
   filter: blur(20px);
   opacity: var(0.7);
   transition: opacity 0.3s;
   border-radius: inherit;
 }
 
-/* 
-* Prevents issues when the parent creates a 
-* stacking context. (For example, using the transform
-* property )
-*/
+/* Prevent stacking-context issues */
 .gradient-shadow:hover::after {
   content: "";
   z-index: -1;

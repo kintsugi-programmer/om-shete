@@ -1,4 +1,49 @@
-{"name":"Omprakash R Shete","headerTaglineOne":"Hello 👋","headerTaglineTwo":"I'm Omprakash R Shete ","headerTaglineThree":"🔬 Ph.D. Scholar, Computational Biologist ","headerTaglineFour":"Microbiome Informatics Lab, IIIT Delhi, India","showCursor":true,"showBlog":true,"darkMode":true,"showResume":true,"socials":[{"id":"2","title":"LinkedIn","link":"https://www.linkedin.com/in/omprakash-shete/"},{"id":"5","title":"Email","link":"mailto:omprakashs@iiitd.ac.in"},{"id":"753eb409-f9a6-4ed0-a81c-087a19ded4df","title":"Scholar","link":"https://scholar.google.com/citations?user=q-q8cvgAAAAJ&hl=en"}],"projects":[{"id":"6","title":"Project Six","description":"Design & Development","imageSrc":"https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTAyfHxwYXN0ZWx8ZW58MHx8MHw%3D&auto=format&fit=crop&w=400&q=60","url":"http://chetanverma.com/"},{"id":"ea3cc945-983e-416a-be29-0d0f48d4caef","title":"New Project","description":"Web Design & Development","imageSrc":"https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTAyfHxwYXN0ZWx8ZW58MHx8MHw%3D&auto=format&fit=crop&w=400&q=60","url":"http://chetanverma.com/"}],
+{"name":"Omprakash R Shete","headerTaglineOne":"Namaste 👋","headerTaglineTwo":"I'm Omprakash R Shete ","headerTaglineThree":"🔬 Ph.D. Scholar, Computational Biologist ","headerTaglineFour":"Microbiome Informatics Lab, IIIT Delhi, India","showCursor":true,"showBlog":false,"darkMode":true,"showResume":true,"socials":[{"id":"2","title":"LinkedIn","link":"https://www.linkedin.com/in/omprakash-shete/"},{"id":"5","title":"Email","link":"mailto:omprakashs@iiitd.ac.in"},{"id":"753eb409-f9a6-4ed0-a81c-087a19ded4df","title":"Scholar","link":"https://scholar.google.com/citations?user=q-q8cvgAAAAJ&hl=en"}],
+  "projects": [
+    {
+      "id": "pub-health-keystone-index",
+      "title": "Toward a Health-Associated Core Keystone Index for the Human Gut Microbiome",
+      "description": "Cell Reports, March 2, 2025. Analyzed ~45,000 gut microbiomes from 141 studies to rank 201 microbial taxa by stability, core presence, and health associations; validated findings on ~10,000 longitudinal samples and ~18,000 cross-sectional samples covering 28 disease conditions; established a framework for translating microbiome insights into dietary interventions and immunotherapy applications.",
+      "imageSrc": "/images/1.jpeg",
+      "url": "/"
+    },
+    {
+      "id": "pub-gut-urinary-uti",
+      "title": "Role of Gut and Urinary Microbiome in Children with Urinary Tract Infections: A Systematic Review",
+      "description": "Diagnostics (MDPI), January 3, 2025. Systematically reviewed gut and urinary microbiota profiles in pediatric UTI cases; identified microbial dysbiosis patterns associated with UTI pathogenesis; highlighted potential targets for microbiome-based preventive and therapeutic strategies.",
+      "imageSrc": "/images/2.jpeg",
+      "url": "/"
+    },
+    {
+      "id": "pub-normal-gut-diverse-populations",
+      "title": "Normal Gut Microbiomes in Diverse Populations: Clinical Implications",
+      "description": "Annual Review of Medicine, November 18, 2024. Surveyed 21,117 gut microbiomes from 65 studies across 29 countries and metadata from 221,983 samples spanning 71 countries; incorporated data from 410 interventional studies covering 15 major diseases; emphasized the critical role of global inclusivity in microbiome research to unlock its full therapeutic potential.",
+      "imageSrc": "/images/3.jpeg",
+      "url": "/"
+    },
+    {
+      "id": "proj-downy-mildew-grapes",
+      "title": "Comparative Expression Analysis of Downy Mildew Resistant Grape Varieties",
+      "description": "ICAR-National Research Centre for Grapes, Pune (Aug 2021 - Mar 2022). Part of B.Tech Biotechnology dissertation; designed and executed RT-qPCR experiments to quantify gene expression in resistant vs. susceptible cultivars; hands-on experience with RNA isolation, cDNA synthesis, primer design, and data analysis.",
+      "imageSrc": "/images/4.jpeg",
+      "url": "/"
+    },
+    {
+      "id": "proj-biomethane-from-cactus",
+      "title": "4G Biomethane Production from Cactus",
+      "description": "College of Agricultural Biotechnology, Loni-Pravara (AVISHKAR), Nov 2019 - Mar 2020. Developed a second-generation biomethane production process using cactus biomass; presented research at AVISHKAR (state-level convention); gained proficiency in anaerobic digestion assays, gas chromatography, and bioprocess optimization.",
+      "imageSrc": "/images/5.jpeg",
+      "url": "/"
+    },
+    {
+      "id": "vol-estah-social-entrepreneurship",
+      "title": "Social Entrepreneurship Development Volunteer",
+      "description": "ESTAH Society, Bengaluru (Jun 2020 - Aug 2020). Designed and facilitated entrepreneurship workshops for undergraduates; developed communication and teamwork skills through community outreach and event coordination; gained insight into social enterprise models and impact measurement.",
+      "imageSrc": "/images/6.jpg",
+      "url": "/"
+    }
+  ]
+,
 
 "services": [
   {
